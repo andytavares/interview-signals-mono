@@ -1,1 +1,1 @@
-web: cd packages/api && pnpm build && pnpm start
+web: turbo run start:api

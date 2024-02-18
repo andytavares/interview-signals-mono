@@ -11,6 +11,9 @@
       "dependsOn": ["type-check"],
       "outputs": ["dist/**"]
     },
+    "start:api": {
+      "dependsOn": ["build"]
+    },
     "test": {},
     "lint": {}
   }
