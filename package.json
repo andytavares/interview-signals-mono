@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:api": "turbo run build --filter=api",
+    "heroku-postbuild": "if [ $SERVER_ENV ]; then pnpm run build:api; else echo no environment detected, please set SERVER_ENV; fi"
   },
   "keywords": [],
   "author": "",
