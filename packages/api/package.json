@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js --external:express --external:cors && pnpm run sentry:sourcemaps",
+    "build": "esbuild src/index.ts --bundle --platform=node --packages=external --outfile=dist/index.js --external:express --external:cors",
     "start": "node dist/index.js",
-    "type-check": "tsc",
-    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org home-cp5 --project interview-signals ./dist && sentry-cli sourcemaps upload --org home-cp5 --project interview-signals ./dist"
+    "type-check": "tsc"
   },
   "keywords": [],
   "author": "",
