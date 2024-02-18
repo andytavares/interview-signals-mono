@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "LicenseRef-LICENSE",
   "devDependencies": {
     "turbo": "^1.12.4"
   }
