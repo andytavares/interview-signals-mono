@@ -12,5 +12,8 @@
   "license": "LicenseRef-LICENSE",
   "devDependencies": {
     "turbo": "^1.12.4"
+  },
+  "engines": {
+    "node": "v18.19.0"
   }
 }
