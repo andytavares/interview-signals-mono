@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:api": "turbo run build --filter=api",
-    "heroku-postbuild": "if [ $SERVER_ENV ]; then npm run build:api; else echo no environment detected, please set SERVER_ENV; fi"
+    "heroku-postbuild": "if [ $SERVER_ENV ]; then pnpm run build:api; else echo no environment detected, please set SERVER_ENV; fi"
   },
   "keywords": [],
   "author": "",
