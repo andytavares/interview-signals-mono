@@ -11,9 +11,12 @@
   "author": "",
   "license": "LicenseRef-LICENSE",
   "devDependencies": {
-    "turbo": "^1.12.4"
+    "turbo": "^1.13.3"
   },
   "engines": {
     "node": "v18.19.0"
+  },
+  "dependencies": {
+    "@decorators/express": "^3.0.0"
   }
 }

@@ -1,8 +1,8 @@
-import cors from 'cors';
-import express, { NextFunction, Response } from 'express';
-import { auth, requiresAuth } from 'express-openid-connect';
 import * as Sentry from '@sentry/node';
 import { ProfilingIntegration } from '@sentry/profiling-node';
+import cors from 'cors';
+import express from 'express';
+import { auth, requiresAuth } from 'express-openid-connect';
 
 import { Workspace } from 'types';
 
